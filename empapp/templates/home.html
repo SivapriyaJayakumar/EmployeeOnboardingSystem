@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}?{% now "U" %}">
 </head>
 <body>
 <div class="nav">
@@ -19,9 +19,9 @@
 </div>
 <div class="dashboard">
     <div class="empcard">
-        {{user.empName}}
-        {{user.empPosition}}
-        {{user.companyName}}
+        <p>HELLO {{user.empName}} !!</p>
+        <p>POSITION : {{user.empPosition}}</p>
+        <p>COMPANY : {{user.companyName}}</p>
     </div>
 </div>
 </body>

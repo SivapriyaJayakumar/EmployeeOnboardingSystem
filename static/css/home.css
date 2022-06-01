@@ -24,6 +24,7 @@ body{
     border-right:2px solid white;
 }
 .linknavitem{
+    color:white;
     text-decoration:none;
 }
 .linknavitem:active,:visited,:hover{
@@ -31,6 +32,11 @@ body{
 }
 .dashboard{
     margin : 20px 16px;
+}
+.empcard{
+
+
+max-width:220px;
 }
 
 h1{
